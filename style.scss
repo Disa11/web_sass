@@ -91,5 +91,74 @@ body {
     display: inline-block;
     animation: wave $waveDur linear infinite;
     will-change: width;
-    transform: translate(0);
+    transform: translateZ(0) scale(0);
+}
+
+.delay {
+    animation-delay: $waveDur / 2;
+}
+
+@keyframes text {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    30% {
+        transform: translate3d(0, 0, 0, );
+    }
+    45% {
+        transform: translate3d(0, -4rem, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes text-k {
+    0% {
+        transform: translate3d(0, -4rem, 0);
+    }
+    38% {
+        transform: translate3d(0, -4rem, 0);
+    }
+    69% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, -4rem, 0);
+    }
+}
+@keyframes coast {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    23% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(16rem, 0, 0);
+    }
+    100% {
+        transform: translate3d(16rem, 0, 0);
+    }
+}
+@keyframes wave {
+    0% {
+        transform: scale(0);
+        width: 2.2rem;
+    }
+    10% {
+        transform: scale(1);
+    }
+    23% {
+        width: 2.2rem;
+    }
+    32% {
+        width: 6.1rem;
+    }
+    45% {
+        width: 5rem;
+    }
+    100% {
+        transform: translate3d(16rem, 0, 0);
+    }
 }
