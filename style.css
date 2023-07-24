@@ -27,33 +27,34 @@ body {
   display: inline-block;
   position: absolute;
   bottom: 0;
-  animation: text 1050ms ease-in infinite;
+  animation: text 750ms ease-in infinite;
   transform: translateZ(0);
 }
 .text-k {
-  left: 1rem;
+  left: -0.1rem;
   transform: translate3d(0, -4rem, 0);
-  animation: text-k 1050ms ease-in infinite;
+  animation: text-k 750ms ease-in infinite;
 }
 .text-n {
-  left: 5rem;
-  animation-delay: 130ms;
+  left: 4.1rem;
+  transform: translate3d(0, -2rem, 0);
+  animation-delay: 60ms;
 }
 .text-a {
-  left: 9rem;
-  animation-delay: 200ms;
+  left: 8.2rem;
+  animation-delay: 140ms;
 }
 .text-u {
-  left: 13rem;
-  animation-delay: 270ms;
+  left: 12.3rem;
+  animation-delay: 220ms;
 }
 .text-t {
-  left: 17rem;
-  animation-delay: 340ms;
+  left: 16.4rem;
+  animation-delay: 300ms;
 }
 .text-h {
-  left: 20.2rem;
-  animation-delay: 410ms;
+  left: 19.7rem;
+  animation-delay: 390ms;
 }
 
 .coast {
@@ -63,7 +64,7 @@ body {
   width: 6.2rem;
   height: 2.2rem;
   display: inline-block;
-  animation: coast 1170ms linear infinite;
+  animation: coast 1500ms linear infinite;
   transform: translateZ(0);
 }
 
@@ -82,13 +83,13 @@ body {
   border-radius: 1.1rem;
   background: radial-gradient(ellipse at center, rgb(116, 241, 1) 0%, rgb(50, 230, 1) 73%, rgb(21, 199, 250) 100%);
   display: inline-block;
-  animation: wave 1170ms linear infinite;
+  animation: wave 1500ms linear infinite;
   will-change: width;
   transform: translateZ(0) scale(0);
 }
 
 .delay {
-  animation-delay: 585ms;
+  animation-delay: 1500ms;
 }
 
 @keyframes text {
@@ -127,10 +128,10 @@ body {
     transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translate3d(16rem, 0, 0);
+    transform: translate3d(19.5rem, 0, 0);
   }
   100% {
-    transform: translate3d(16rem, 0, 0);
+    transform: translate3d(21.2rem, 0, 0);
   }
 }
 @keyframes wave {

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli');
 $background-color: #A9A9F5;
-$waveDur: 1170ms;
-$text-Dur: 1050ms;
+$waveDur: 1500ms;
+$text-Dur: 750ms;
 
 *,*:before, *:after {
     box-sizing: border-box;
@@ -36,29 +36,30 @@ body {
     transform: translateZ(0);
 
     &-k {
-        left: 1rem;
+        left: -0.1rem;
         transform: translate3d(0, -4rem, 0);
         animation: text-k $text-Dur ease-in infinite;
     }
     &-n {
-        left: 5rem;
-        animation-delay: 130ms;
+        left: 4.1rem;
+        transform: translate3d(0, -2rem, 0);
+        animation-delay: 60ms;
     }
     &-a {
-        left: 9rem;
-        animation-delay: 200ms;
+        left: 8.2rem;
+        animation-delay: 140ms;
     }
     &-u {
-        left: 13rem;
-        animation-delay: 270ms;
+        left: 12.3rem;
+        animation-delay: 220ms;
     }
     &-t {
-        left: 17rem;
-        animation-delay: 340ms;
+        left: 16.4rem;
+        animation-delay: 300ms;
     }
     &-h {
-        left: 20.2rem;
-        animation-delay: 410ms;
+        left: 19.7rem;
+        animation-delay: 390ms;
     }
 }
 
@@ -94,7 +95,7 @@ body {
 }
 
 .delay {
-    animation-delay: $waveDur / 2;
+    animation-delay: $waveDur;
 }
 
 @keyframes text {
@@ -134,10 +135,10 @@ body {
         transform: translate3d(0, 0, 0);
     }
     50% {
-        transform: translate3d(16rem, 0, 0);
+        transform: translate3d(19.5rem, 0, 0);
     }
     100% {
-        transform: translate3d(16rem, 0, 0);
+        transform: translate3d(21.2rem, 0, 0);
     }
 }
 @keyframes wave {
