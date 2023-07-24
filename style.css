@@ -149,9 +149,16 @@ body {
   }
   45% {
     width: 5rem;
+    transform: rotateY(0deg) scale(1, 1);
+  }
+  51% {
+    transform: rotateY(90deg) scale(0.6, 0.2);
+  }
+  52% {
+    transform: rotateY(90deg) scale(0);
   }
   100% {
-    transform: translate3d(16rem, 0, 0);
+    transform: rotateY(90deg) scale(0);
   }
 }
 
