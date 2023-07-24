@@ -1,5 +1,35 @@
 $background-color: #A9A9F5;
 
+*,*:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Muli');
+    $waveDur: 2100ms;
+    $text-Dur: 1050ms;
+
 body {
+
+    font-size: 62.5%;
     background-color: $background-color;
+    font-family: 'Muli', Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 17rem;
+    height: 10rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 900;
+    display: inline-block;
+    position: absolute;
 }
