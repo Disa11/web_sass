@@ -13,7 +13,7 @@ body {
 
 .container {
   position: absolute;
-  width: 17rem;
+  width: 24rem;
   height: 10rem;
   left: 50%;
   top: 50%;
@@ -28,32 +28,32 @@ body {
   position: absolute;
   bottom: 0;
   animation: text 1050ms ease-in infinite;
-  transform: translate(0);
+  transform: translateZ(0);
 }
 .text-k {
-  left: 0rem;
-  transform: translate(0, -4rem, 0);
-  animation: text-k 1050ms ease-in;
+  left: 1rem;
+  transform: translate3d(0, -4rem, 0);
+  animation: text-k 1050ms ease-in infinite;
 }
 .text-n {
-  left: 5.4rem;
-  animation-delay: 150ms;
+  left: 5rem;
+  animation-delay: 130ms;
 }
 .text-a {
-  left: 9.6rem;
-  animation-delay: 230ms;
+  left: 9rem;
+  animation-delay: 200ms;
 }
 .text-u {
-  left: 13.8rem;
-  animation-delay: 310ms;
+  left: 13rem;
+  animation-delay: 270ms;
 }
 .text-t {
-  left: 18rem;
-  animation-delay: 400ms;
+  left: 17rem;
+  animation-delay: 340ms;
 }
 .text-h {
-  left: 22.2rem;
-  animation-delay: 500ms;
+  left: 20.2rem;
+  animation-delay: 410ms;
 }
 
 .coast {
@@ -63,8 +63,8 @@ body {
   width: 6.2rem;
   height: 2.2rem;
   display: inline-block;
-  animation: coast 2100ms linear infinite;
-  transform: translate(0);
+  animation: coast 1170ms linear infinite;
+  transform: translateZ(0);
 }
 
 .wave-rel-wrap {
@@ -82,13 +82,13 @@ body {
   border-radius: 1.1rem;
   background: radial-gradient(ellipse at center, rgb(116, 241, 1) 0%, rgb(50, 230, 1) 73%, rgb(21, 199, 250) 100%);
   display: inline-block;
-  animation: wave 2100ms linear infinite;
+  animation: wave 1170ms linear infinite;
   will-change: width;
   transform: translateZ(0) scale(0);
 }
 
 .delay {
-  animation-delay: 1050ms;
+  animation-delay: 585ms;
 }
 
 @keyframes text {

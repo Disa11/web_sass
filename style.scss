@@ -1,14 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli');
 $background-color: #A9A9F5;
+$waveDur: 1170ms;
+$text-Dur: 1050ms;
 
 *,*:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Muli');
-    $waveDur: 2100ms;
-    $text-Dur: 1050ms;
 
 body {
 
@@ -19,7 +18,7 @@ body {
 
 .container {
     position: absolute;
-    width: 17rem;
+    width: 24rem;
     height: 10rem;
     left: 50%;
     top: 50%;
@@ -34,32 +33,32 @@ body {
     position: absolute;
     bottom: 0;
     animation: text $text-Dur ease-in infinite;
-    transform: translate(0);
+    transform: translateZ(0);
 
     &-k {
-        left: 0rem;
-        transform: translate(0, -4rem, 0);
-        animation: text-k $text-Dur ease-in;
+        left: 1rem;
+        transform: translate3d(0, -4rem, 0);
+        animation: text-k $text-Dur ease-in infinite;
     }
     &-n {
-        left: 5.4rem;
-        animation-delay: 150ms;
+        left: 5rem;
+        animation-delay: 130ms;
     }
     &-a {
-        left: 9.6rem;
-        animation-delay: 230ms;
+        left: 9rem;
+        animation-delay: 200ms;
     }
     &-u {
-        left: 13.8rem;
-        animation-delay: 310ms;
+        left: 13rem;
+        animation-delay: 270ms;
     }
     &-t {
-        left: 18rem;
-        animation-delay: 400ms;
+        left: 17rem;
+        animation-delay: 340ms;
     }
     &-h {
-        left: 22.2rem;
-        animation-delay: 500ms;
+        left: 20.2rem;
+        animation-delay: 410ms;
     }
 }
 
@@ -71,7 +70,7 @@ body {
     height: 2.2rem;
     display: inline-block;
     animation: coast $waveDur linear infinite;
-    transform: translate(0);
+    transform: translateZ(0);
 }
 
 .wave-rel-wrap {
