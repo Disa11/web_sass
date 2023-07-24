@@ -32,4 +32,64 @@ body {
     font-weight: 900;
     display: inline-block;
     position: absolute;
+    bottom: 0;
+    animation: text $text-Dur ease-in infinite;
+    transform: translate(0);
+
+    &-k {
+        left: 0rem;
+        transform: translate(0, -4rem, 0);
+        animation: text-k $text-Dur ease-in;
+    }
+    &-n {
+        left: 5.4rem;
+        animation-delay: 150ms;
+    }
+    &-a {
+        left: 9.6rem;
+        animation-delay: 230ms;
+    }
+    &-u {
+        left: 13.8rem;
+        animation-delay: 310ms;
+    }
+    &-t {
+        left: 18rem;
+        animation-delay: 400ms;
+    }
+    &-h {
+        left: 22.2rem;
+        animation-delay: 500ms;
+    }
+}
+
+.coast {
+    position: absolute;
+    left: 1.3rem;
+    bottom: 1.7rem;
+    width: 6.2rem;
+    height: 2.2rem;
+    display: inline-block;
+    animation: coast $waveDur linear infinite;
+    transform: translate(0);
+}
+
+.wave-rel-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 3rem;
+    perspective-origin: 0%, 50%;
+}
+
+.wave {
+    position: absolute;
+    width: 6.2rem;
+    height: 2.2rem;
+    border-radius: 1.1rem;
+    background: radial-gradient(ellipse at center, rgba(116, 241, 1)0%, rgba(50, 230, 1)73%, rgba(21, 199, 250, 1)100%);
+    display: inline-block;
+    animation: wave $waveDur linear infinite;
+    will-change: width;
+    transform: translate(0);
 }
