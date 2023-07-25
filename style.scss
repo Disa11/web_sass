@@ -10,7 +10,6 @@ $text-Dur: 750ms;
 }
 
 body {
-
     font-size: 62.5%;
     background-color: $background-color;
     font-family: 'Muli', Helvetica, sans-serif;
@@ -32,22 +31,21 @@ body {
     display: inline-block;
     position: absolute;
     bottom: 0;
-    animation: text $text-Dur ease-in infinite;
+    animation: text $text-Dur  ease-in infinite;
     transform: translateZ(0);
 
     &-k {
         left: -0.1rem;
-        transform: translate3d(0, -4rem, 0);
         animation: text-k $text-Dur ease-in infinite;
     }
     &-n {
         left: 4.1rem;
         transform: translate3d(0, -2rem, 0);
-        animation-delay: 60ms;
+        animation-delay: 150ms;
     }
     &-a {
         left: 8.2rem;
-        animation-delay: 140ms;
+        animation-delay: 220ms;
     }
     &-u {
         left: 12.3rem;
@@ -65,9 +63,9 @@ body {
 
 .coast {
     position: absolute;
-    left: 1.3rem;
+    left: 0.3rem;
     bottom: 1.7rem;
-    width: 6.2rem;
+    width: 4.1rem;
     height: 2.2rem;
     display: inline-block;
     animation: coast $waveDur linear infinite;
@@ -75,7 +73,7 @@ body {
 }
 
 .wave-rel-wrap {
-    position: relative;
+    position: relativa;
     width: 100%;
     height: 100%;
     perspective: 3rem;
@@ -95,7 +93,7 @@ body {
 }
 
 .delay {
-    animation-delay: $waveDur;
+    animation-delay: $waveDur / 2;
 }
 
 @keyframes text {

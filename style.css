@@ -32,17 +32,16 @@ body {
 }
 .text-k {
   left: -0.1rem;
-  transform: translate3d(0, -4rem, 0);
   animation: text-k 750ms ease-in infinite;
 }
 .text-n {
   left: 4.1rem;
   transform: translate3d(0, -2rem, 0);
-  animation-delay: 60ms;
+  animation-delay: 150ms;
 }
 .text-a {
   left: 8.2rem;
-  animation-delay: 140ms;
+  animation-delay: 220ms;
 }
 .text-u {
   left: 12.3rem;
@@ -59,9 +58,9 @@ body {
 
 .coast {
   position: absolute;
-  left: 1.3rem;
+  left: 0.3rem;
   bottom: 1.7rem;
-  width: 6.2rem;
+  width: 4.1rem;
   height: 2.2rem;
   display: inline-block;
   animation: coast 1500ms linear infinite;
@@ -69,7 +68,7 @@ body {
 }
 
 .wave-rel-wrap {
-  position: relative;
+  position: relativa;
   width: 100%;
   height: 100%;
   perspective: 3rem;
@@ -89,7 +88,7 @@ body {
 }
 
 .delay {
-  animation-delay: 1500ms;
+  animation-delay: 750ms;
 }
 
 @keyframes text {
