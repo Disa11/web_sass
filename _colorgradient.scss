@@ -1,0 +1,18 @@
+.colorgrad{
+    background: linear-gradient(270deg, #5b3bdb, #907ae8, #9286c5, #c7bcf7, #c7bcf7, #7f67e4, #ac9fe1);
+    background-size: 1400% 1400%;
+
+    -o-animation: back-gradient 30s ease infinite;
+    animation: back-gradient 30s ease infinite;
+}
+
+@-o-keyframes back-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes back-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

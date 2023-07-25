@@ -1,5 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Muli");
-*, *:before, *:after {
+.colorgrad {
+  background: linear-gradient(270deg, #5b3bdb, #907ae8, #9286c5, #c7bcf7, #c7bcf7, #7f67e4, #ac9fe1);
+  background-size: 1400% 1400%;
+  -o-animation: back-gradient 30s ease infinite;
+  animation: back-gradient 30s ease infinite;
+}
+
+@-o-keyframes back-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes back-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,7 +38,6 @@
 
 body {
   font-size: 62.5%;
-  background-color: #A9A9F5;
   font-family: "Muli", Helvetica, sans-serif;
 }
 
@@ -68,7 +98,7 @@ body {
 }
 
 .wave-rel-wrap {
-  position: relativa;
+  position: relative;
   width: 100%;
   height: 100%;
   perspective: 3rem;
