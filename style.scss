@@ -1,3 +1,4 @@
+@use "hidden";
 @import url('https://fonts.googleapis.com/css2?family=Muli');
 $waveDur: 1600ms;
 $text-Dur: 800ms;
@@ -196,15 +197,5 @@ body{
     100% {
         transform: rotateY(90deg) scale(0);
     }
-}
-
-.margen {
-    margin: 6em auto 0 auto 0;
-    margin-top: 5%;
-    justify-content: center;
-    display: flex;
-}
-.hidden {
-    overflow: hidden;
 }
 

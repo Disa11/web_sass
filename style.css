@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Muli");
+.margen {
+  margin: 6em auto 0 auto 0;
+  margin-top: 5%;
+  justify-content: center;
+  display: flex;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.tagvisibility {
+  visibility: hidden;
+}
+
 body {
   font-size: 40.5%;
   font-family: "Muli", Helvetica, sans-serif;
@@ -179,16 +194,6 @@ body {
   100% {
     transform: rotateY(90deg) scale(0);
   }
-}
-.margen {
-  margin: 6em auto 0 auto 0;
-  margin-top: 5%;
-  justify-content: center;
-  display: flex;
-}
-
-.hidden {
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
