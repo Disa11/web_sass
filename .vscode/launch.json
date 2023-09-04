@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/danam/Documents/rp_clone",
-      "program": "c:/Users/danam/Documents/rp_clone/build/Debug/outDebug",
+      "cwd": "c:/Users/danam/Documents/rp_clone/cs50w-project1",
+      "program": "c:/Users/danam/Documents/rp_clone/cs50w-project1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
